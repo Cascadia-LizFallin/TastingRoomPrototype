@@ -30,7 +30,7 @@
 
         <activity
             android:name="com.example.liz.tastingroomprototype.ClarityActivity"
-            android:label="Observations">
+            android:label="Clarity">
         </activity>
 
     </application>

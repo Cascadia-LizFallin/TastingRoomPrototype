@@ -16,12 +16,15 @@ public class ClarityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_clarity);
+        final Button ObsBtn =
+                (Button) findViewById(R.id.btnObservations);
 
         // Need to set methods for radio buttons and text fields
-//        initRbtnClear();
-//        initRbtnHazy();
-//        initRbtnBright();
-//        initRbtnDull();
+        initRbtnClear();
+        initRbtnHazy();
+        initRbtnBright();
+        initRbtnDull();
         initBackBtn();
         initHomeBtn();
         initResetBtn();
@@ -49,7 +52,8 @@ public class ClarityActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-/*
+
+    // Radio buttons currently refresh the page, and are not connected with one another.
     // Radio button for Clear
     private void initRbtnClear() {
         RadioButton list = (RadioButton) findViewById(R.id.rbtnClear);
@@ -98,7 +102,7 @@ public class ClarityActivity extends AppCompatActivity {
             }
         });
     }
-*/
+
     // Go back one page
     private void initBackBtn() {
         Button list = (Button) findViewById(R.id.btnBack);
